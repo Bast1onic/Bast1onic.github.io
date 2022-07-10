@@ -51,7 +51,15 @@
 						<div class="inner">
 							<h2>About this website</h2>
 							<span class="image main"><img src="images/pic13.jpg" alt="" /></span>
-							<h3>How to make your own personal website (like this one):</h3>
+							<p>
+								After completing my course project on social media misinformation, I wanted to publish an article online detailing my experiences and thoughts from its inception to completion. I realized that I might want to showcase other personal projects I’ve uploaded to Github with their own articles. While I could have used Medium or another social media site to do so, it only seemed natural to use a personal website which itself can also be managed with Github. 
+								<br><br>
+								There are a few caveats to using Github Pages to host a website. Among them are a 1GB limit on the repository from which the website is published, and that the website cannot be used for commercial purposes. Otherwise, it’s useful for showcasing several select things, like this website does.
+								<br><br>
+								I’ve written instructions for readers to make their own websites like this one if they’re interested. Once you’ve learned a little HTML/CSS, it doesn’t take long to get your own website up and running for free. 
+
+							</p>
+							<h3>How to make your own personal website:</h3>
 							<p>
 								For accessibility, I have written with the assumption that the reader has little or no knowledge of web development.
 							</p>
@@ -69,8 +77,64 @@
 									</li>
 								</ul>
 							</p>
-							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis dapibus rutrum facilisis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Etiam tristique libero eu nibh porttitor fermentum. Nullam venenatis erat id vehicula viverra. Nunc ultrices eros ut ultricies condimentum. Mauris risus lacus, blandit sit amet venenatis non, bibendum vitae dolor. Nunc lorem mauris, fringilla in aliquam at, euismod in lectus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. In non lorem sit amet elit placerat maximus. Pellentesque aliquam maximus risus, vel venenatis mauris vehicula hendrerit.</p>
-							<p>Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque venenatis dolor imperdiet dolor mattis sagittis. Praesent rutrum sem diam, vitae egestas enim auctor sit amet. Pellentesque leo mauris, consectetur id ipsum sit amet, fersapien risus, commodo eget turpis at, elementum convallis elit. Pellentesque enim turpis, hendrerit tristique lorem ipsum dolor.</p>
+							<p>
+								To start, you can download a free website template from sites such as <a href="http://html5up.net/">HTML5 UP</a>, and modify it to suit your preferences. If you can’t find a template that you like, feel free to code your own HTML and CSS files. No matter what design you settle on, make sure that it fits the content you plan to publish, is simple (so that your website will load faster for impatient viewers), and accessible to visitors using devices with varying screen sizes (e.g. the content will load or fit on not only large computer screens). 
+								Downloading the right template can take care of these problems for you. I personally downloaded the <a href="https://html5up.net/phantom">Phantom</a> template from HTML5 UP. Note that you can see how your website will look before publishing it by opening the .html file with an Internet browser like Google Chrome.
+							</p>
+							<p>
+								If your website design includes a form, you can connect it to your Formspree account so that responses will be delivered to your email inbox. 
+								Once you’ve created a new project and form on your Formspree account, paste the form URL into the “action” attribute of your opening form tag. 
+								Make sure that the “method” attribute is set to “post”.
+							</p>
+							<p>
+								Once you have finished coding your website, you can create and populate the Github repository from which your website will be hosted. 
+								Depending on what you name the repository, it will either be a user site or a project site, and the URL will change accordingly.
+							</p>
+							<div class="table-wrapper">
+								<table class="alt">
+									<thead>
+										<tr>
+											<th></th>
+											<th>User site</th>
+											<th>Project site</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td>Repository name</td>
+											<td>[username].github.io</td>
+											<td>[repository_name]</td>
+										</tr>
+										<tr>
+											<td>URL</td>
+											<td>[username].github.io</td>
+											<td>[username].github.io/[repository_name]</td>
+										</tr>
+										<tr>
+											<td>Quantity allowed</td>
+											<td>1 per Github account</td>
+											<td>Unlimited</td>
+										</tr>
+									</tbody>
+								</table>								
+							</div>
+							<p>
+								If you want your website to have a custom URL, you can purchase one and specify it in a CNAME file in your repository.
+							</p>
+							<p>
+								You can then upload the files to the repository using Github’s GUI or a command-line interface (CLI). 
+								If you choose to use the CLI, use the following commands (note that if you are using Windows, you will need to <a href="https://gitforwindows.org/">download</a> a special terminal to use Git):
+							</p>
+							<ol>
+								<li>In the directory containing your repository, use <code>git init</code> to initialize Git.</li>
+								<li>Connect to Github using <code>git remote add origin https://github.com/[URL].git</code>, where [URL] is your website's URL (see the above table).</li>
+								<li>Select all of the files in your repository with <code>git add .</code></li>
+								<li>Commit your files with <code>git commit -m “[message]”</code>, where you can briefly summarize the changes in the commit in [message].</li>
+								<li>Finally, push your changes with <code>git push origin main</code>. If your main branch is named something other than "main", specify that name instead of main at the end of that command.</li>
+							</ol>
+							<p>
+								To publish new changes to your website, repeat the above steps except the 2nd. 
+							</p>
 						</div>
 					</div>
 
